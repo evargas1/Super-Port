@@ -1,0 +1,237 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrella Vargas - Developer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/b0833bdda5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="page-sec">
+        
+        <div class="large-container">
+            <!-- main menu section that might not need a sandwhitch menu bar -->
+            <div class="menu-sec mini-two-sec">
+                <div class="left-menu">
+                    <ul class="menu-items">
+                        <li><a id="mainText" class="main-text" href="#">Home</a></li>
+                        <li><a id="mainText" class="main-text" href="#about-sec" >About</a></li>
+                        <li><a id="mainText" class="main-text" href="#resume-section">Resume</a></li>
+                    </ul>
+                </div>
+                <div class="right-menu">
+                    <button onclick="darkMode()" class="day-night-butt"><i onclick="myFunction(this)" class="fas fa-cloud-moon fa-2x"></i></button>
+                </div>
+            </div>
+
+            <!-- small sec with my name and image -->
+            <div class="intro-sec mini-two-sec">
+                <div class="left-menu">
+                    <h1 class="my-name">Estrella Vargas </h1>
+                    <span class="small-text">Web Developer </span> <br>
+                    
+                    
+                    <p class="main-text">I build simple easy to navigate websites for small business in Chicago. Simple is not overrated.</p>
+
+                    
+                    <span>
+                        <a href="#" target="_blank" ><i class="fab fa-github fa-2x" style="color: rgb(139, 103, 173); padding-right:10px;"></i></a> 
+                        <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x" style="color: rgb(81, 133, 201); padding-right:10px;"></i></a>
+                        <a href="vargasestrella290@gmail.com"><i class="fas fa-envelope fa-2x" style="color: rgb(216, 111, 92);"></i></a>
+
+
+                        
+                     </span> <br>
+                </div>
+                
+                <div class="right-menu">
+                    <img width="200px" src="{% static './img/Round-picture.png' %}" alt="">
+                    
+                </div>
+
+            </div>
+
+            <div class="projects-sec">
+                <h2 class="header-text">Projects</h2>
+                <div class="small-container">
+                    <div id="funborder1" class="col-3">
+                        <h3 class="large-text"> <span class="bold-large-text"> Eat to Heal </span><br>
+                        Created for a Nutritionist to schedule appointments with new clients. Marketing the services offered by a small family owned clinic.</h3><span class="small-text">HTML/CSS, JavaScript, Python, Django, and MySQL</span>
+
+                        <div class="view-more">
+                            <div class="git"><a href="#"><i class="fab fa-github fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                            <div class="site"><a href="#"><i class="far fa-arrow-alt-circle-right fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                        </div>
+
+
+                    </div>
+                    <div id="funborder2" class="col-3">
+                        <h3 class="large-text"> <span class="bold-large-text"> Weather App </span><br>
+                        Checks the weather in your local city by clicking the add city button. Utilizes google scrapping to find the current weather.</h3><span class="small-text">HTML/CSS, JavaScript, Python, Django, and Soup</span>
+
+                        <div class="view-more">
+                            <div class="git"><a href="#"><i class="fab fa-github fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                            <div class="site"><a href="#"><i class="far fa-arrow-alt-circle-right fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                        </div>
+
+
+                    </div>
+                    <div id="funborder3" class="col-3">
+                        <h3 class="large-text"> <span class="bold-large-text"> Finematter </span><br>
+                        Collaborated with a local designer to develop a static version of this high brand ecommerce website.</h3><span class="small-text">HTML/CSS and JavaScript. Pending backend tools.</span>
+
+                        <div class="view-more">
+                            <div class="git"><a href="#"><i class="fab fa-github fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                            <div class="site"><a href="#"><i class="far fa-arrow-alt-circle-right fa-2x" style="color:rgb(78, 77, 77);"></i></a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="header-text">Skills</h2>
+            <div class="skills-row">
+                
+                <div class="col-6">
+                    <img src="{% static './img/html.png' %}" alt="">
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static './img/css.png' %}" alt="">
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static './img/python.png' %}" alt="">
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static './img/django.png' %}" alt="">
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static './img/mysql.png' %}" alt="">
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static './img/photoshop.png' %}" alt="">
+                </div>
+
+                
+            </div>
+         
+
+
+            <!-- small about me section not adding a lot of styling  -->
+
+            <div class="about-me-sec">
+                
+                <h2 id="about-sec" class="header-text">About</h2>
+                <p class="main-text">
+                    After graduating High School and getting a taste of coding in my computer science classes, I was positive that I wanted to pursue a <span class="boldish">career in Web Development</span>. I did thorough research into bootcamps and unfortunately was unable to attend any because at the time I was only 16. I was not giving up. I sought out mentors in the industry and they encouraged me to become a <span class="boldish">self taught developer</span>. Just the thought of teaching myself something as "complex" as coding was terrifying. Even so, the thought of walking away without even <span class="boldish">trying</span> was far more petrifying. So here I am now. 
+                </p>
+
+            </div>
+
+
+
+            <!--  beggining the contact me section -->
+
+
+            <div class="resume-sec">
+                <h2 id="resume-section" class="header-text">Resume</h2>
+                <div class="large-image">
+                    <img src="{% static './img/picture_of_resume.png' %}" alt="">
+                    <div class="download-butt">
+                        <ul class="menu-items">
+                            <li><a class="main-text" href="./images/Estrella_Vargas_Resume.pdf" title="Estrella_Vargas_Resume.pdf" download>Download PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        
+    </div>
+
+
+<hr class="needs-space">
+<div class="footer-sec">
+    <h5 class="small-text">All rights resvered @ Estrella Vargas</h5>
+</div>
+
+
+
+<script>
+    function myFunction(x) {
+        x.classList.toggle("fa-cloud-sun");
+      }
+</script>
+
+<script>
+
+
+    function darkMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+       var elementss = document.querySelectorAll('mainText');
+       
+
+       const maintext = document.querySelectorAll(".main-text");
+       maintext.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const myname = document.querySelectorAll(".my-name");
+	    myname.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const smalltext = document.querySelectorAll(".small-text");
+	    smalltext.forEach(fakeImage => {
+            fakeImage.classList.toggle("gray");
+	    });
+
+        const headertext = document.querySelectorAll(".header-text");
+	    headertext.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const largetext = document.querySelectorAll(".large-text");
+	    largetext.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const boldlargetext = document.querySelectorAll(".bold-large-text");
+	    boldlargetext.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const boldsmalltext = document.querySelectorAll(".boldish");
+	    boldsmalltext .forEach(fakeImage => {
+            fakeImage.classList.toggle("red");
+	    });
+
+   
+        
+    }
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>

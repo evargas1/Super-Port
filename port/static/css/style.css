@@ -1,0 +1,286 @@
+/* fonts for the page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --red: #CD4631;
+    --white: #F2F4FF; 
+    --black: #1B1B1E;
+   
+  }
+body{
+    background-color: var(--white);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.large-container{
+    max-width: 750px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+}
+.small-container{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.mini-two-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-menu{
+    flex-basis: 40%;
+    min-width: 300px;
+    text-align: right;
+    float: right;
+    margin-bottom: 20px;
+}
+.left-menu{
+    flex-basis: 60%;
+    min-width: 300px;
+    text-align: left;
+    float: left;
+    margin-bottom: 20px;
+}
+.skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+/* basic layout of code above  */
+
+
+
+
+
+
+/* menu section code for color and small effects */
+.menu-items{
+    display: inline-block;
+    text-align: left;
+    padding-left: 0;
+    
+}
+.menu-items li {
+    display: inline-block;
+}
+.menu-items li a{
+    text-decoration: none;
+    padding: 8px;
+}
+.menu-items li a:hover{
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* day and night button */
+.day-night-butt{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgb(190, 190, 190);
+    transition: 0.5ms;
+    cursor: pointer;
+}
+.day-night-butt:hover{
+    border: 1px solid rgb(78, 77, 77);
+
+}
+
+
+
+
+
+/* all the basic i guess small text on the page */
+.main-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--black);
+}
+.my-name{
+    font-size: 45px;
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+.small-text{
+    font-size: 15px;
+    color: var(--black);
+    padding: 0;  
+    margin: 0;
+}
+.header-text{
+    font-size: 35px;
+    color: var(--black);
+    margin: 0;
+}
+.large-text{
+    font-size: 16px;
+    color: var(--black);
+    margin: 0;
+    font-weight: 500;
+
+}
+.bold-large-text{
+    font-size: 22px;
+    color: rgb(78, 77, 77);
+    margin: 0;
+    font-weight: 400;
+
+}
+.boldish{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    color: rgb(90, 59, 59);
+    font-weight: 700;
+}
+.dark-mode {
+    background-color: black;
+    
+}
+.light{
+    color: #F2F4FF !important;
+}
+.gray{
+    color: rgb(182, 181, 181);
+}
+.red{
+    color: rgb(187, 150, 150);
+}
+
+
+
+
+/* unique borders for my projects  */
+
+#funborder1{
+    border-image: linear-gradient(to right, rgb(202, 204, 98), rgb(164, 24, 235)) 1;
+}
+#funborder2{
+    border-image: linear-gradient(to right, rgb(75, 156, 64), rgb(163, 46, 17)) 1;
+}
+#funborder3{
+    border-image: linear-gradient(to right, rgb(223, 45, 169), rgb(24, 235, 235)) 1;
+}
+
+
+/* my simple projects section with 3 projects */
+
+.col-3{
+    flex-basis: 28%;
+    min-width: 220px; 
+    margin-bottom: 20px;
+    border: 3px solid;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.col-3:hover {
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02); 
+}
+.view-more{
+    display: inline-block;
+    width: 215px;
+    margin-top: 15px;
+}
+.git{
+    float: left;
+}
+.site{
+    float: right;
+}
+
+
+
+
+/* the skills section */
+.col-6{
+    flex-basis: 15%;
+    min-width: 100px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.col-6 img{
+    width: 50px;
+    border-top: 15px;
+}
+
+
+
+
+
+/* about me sction am I lazy lol  */
+.about-me-sec{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+
+/* contact me section with buttons */
+.col-3-contact{
+    flex-basis: 30%;
+    min-width: 140px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-sec{
+    margin-top: 40px;
+}
+
+
+
+/* resume section */
+.large-image{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+.large-image img{
+    width: 400px;
+}
+.resume-sec{
+    margin-top: 30px;
+}
+
+
+/* footer */
+.needs-space{
+    margin-top: 40px;
+}
+.footer-sec{
+    height: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* scroll button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    right: 10%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  
