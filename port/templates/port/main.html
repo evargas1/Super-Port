@@ -150,7 +150,7 @@
                     <img src="{% static './img/picture_of_resume.png' %}" alt="">
                     <div class="download-butt">
                         <ul class="menu-items">
-                            <li><a class="main-text" href="./img/Estrella_Vargas.pdf" title="Estrella_Vargas.pdf" download="Estrella_Vargas">Download PDF</a></li>
+                            <li><a class="main-text" (click)="downloadMyFile()" href="">Download PDF</a></li>
                         </ul>
                     </div>
                 </div>
@@ -227,7 +227,19 @@
 
 </script>
 
+<script>
 
+downloadMyFile(){
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'img/Estrella_Vargas.pdf');
+    link.setAttribute('download', `Estrella_Vargas.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
+</script>
 
 
 
