@@ -12,6 +12,275 @@
 </head>
 <body>
 
+<style>
+
+     
+.reserve {
+    max-width: 1200px;
+    min-width: 15rem;
+    width: 80vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: 25vh;
+    margin: 2rem auto;
+    border-top: 0.06rem solid #24243c;
+    border-bottom: 0.06rem solid #24243c;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .reserve {
+      border-bottom: .06rem solid transparent;
+    }
+  }
+  
+  .reserve #success-message {
+    margin: 2rem auto .5rem auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #176617;
+    font-family: "Montserrat", sans-serif;
+    display: none;
+  }
+  
+  .reserve h2 {
+    margin: 1rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #24243c;
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1rem;
+  }
+  
+  .reserve #personal-info {
+    display: none;
+  }
+  
+  .reserve form {
+    max-width: 970px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .reserve form {
+      margin: 0 auto 1.5rem auto;
+    }
+  }
+  
+  .reserve form input {
+    width: 15rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    display: inline-block;
+    border: solid #24243c;
+    border-radius: unset;
+    border-width: 0.1rem 0.05rem 0.1rem 0.1rem;
+    margin-top: 1rem;
+  }
+  
+  .reserve form input.error {
+    border: 2px solid red;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .reserve form input {
+      border-width: .1rem;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
+  .reserve form .submit-butt {
+    border-width: 0.1rem;
+    font-size: 1rem;
+    background: #24243c;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .reserve form .submit-butt:focus {
+    border-width: 0.2rem;
+    border-color: #fff;
+  }
+  
+  .reserve form .submit-butt:hover {
+    background-color: #fff;
+    color: #24243c;
+  }
+  
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 7.5rem auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 3rem auto;
+      border-bottom: .07rem solid transparent;
+      padding-top: 2rem;
+    }
+  }
+  
+  .card .info {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    min-width: 250px;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 1rem 0;
+  }
+  
+  .card .info h3 {
+    text-transform: uppercase;
+    color: #24243c;
+    font-size: 1.4rem;
+    margin: 2rem 0 0 0;
+    font-family: "Playfair Display", serif;
+    letter-spacing: .1rem;
+  }
+  
+  .card .info p {
+    font-size: .9rem;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .card .info a {
+    display: block;
+    width: 15rem;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    background-color: #24243c;
+    margin: 1rem auto .5rem auto;
+    padding: .5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: .1rem solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .card .info a:focus {
+    background-color: #fff;
+    color: #24243c;
+    border: 0.1rem solid #24243c;
+  }
+  
+  .card .info a:hover {
+    background-color: #fff;
+    color: #24243c;
+    border: 0.1rem solid #24243c;
+  }
+  
+  .card .info span {
+    display: block;
+    text-transform: uppercase;
+    font: 1rem;
+    margin: 0 auto;
+  }
+  
+  .card .info-img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    min-width: 250px;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card .info-img {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+  }
+  
+  .card .info-img img {
+    width: 22rem;
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card .info-img img {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin: 1.5rem 0;
+      width: 100%;
+      height: 20rem;
+    }
+  }
+  
+  .card .info-img .left-info-img {
+    position: absolute;
+    width: 22rem;
+    height: 20rem;
+    overflow: hidden;
+    top: -15%;
+    left: -15%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card .info-img .left-info-img {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 1.5rem 0;
+      width: 100%;
+      height: 20rem;
+      position: relative;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  
+  .card .info-img .left-info-img img {
+    position: relative;
+    width: 60%;
+    height: 140%;
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  
+
+</style>
+
 
 {% comment %} hey {% endcomment %}
 
