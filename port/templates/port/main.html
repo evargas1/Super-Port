@@ -229,6 +229,9 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
+  .right-hand-img{
+    bottom: -20%;
+  }
   
   @media screen and (max-width: 900px) {
     .card .info-img img {
@@ -354,7 +357,7 @@
                             <a target="_blank" href="https://youtu.be/fCvCKiRs-kc">Video</a>
                         </div>
                         <div class="info-img">
-                            <img src="{% static './img/picture-pickquick.png' %}" alt="egg rolls on ice">
+                            <img class="right-hand-img" src="{% static './img/picture-pickquick.png' %}" alt="egg rolls on ice">
                         </div>
                     </div>
                 </section>
