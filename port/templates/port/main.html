@@ -25,6 +25,10 @@
     border-top: 0.06rem solid #24243c;
     border-bottom: 0.06rem solid #24243c;
   }
+.reserve2{
+    border-top: 0.06rem solid #fff;
+    border-bottom: 0.06rem solid #fff;
+}
   
   @media screen and (max-width: 900px) {
     .reserve {
@@ -464,6 +468,11 @@
         const boldlargetext2 = document.querySelectorAll(".toggle-light");
 	    boldlargetext2.forEach(fakeImage => {
             fakeImage.classList.toggle("light");
+	    });
+
+        const border = document.querySelectorAll(".reserve");
+	    border.forEach(fakeImage => {
+            fakeImage.classList.toggle("reserve2");
 	    });
 
         const boldsmalltext = document.querySelectorAll(".boldish");
