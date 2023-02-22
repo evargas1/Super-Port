@@ -271,6 +271,12 @@
   .card .info-img .left-info-img img {
     position: relative;
   }
+
+  #on-off{
+      position: absolute;
+      top: 0;
+      right: 15%;
+  }
   
 
 </style>
@@ -281,21 +287,11 @@
     <div class="page-sec">
         
         <div class="large-container">
-            <!-- main menu section that might not need a sandwhitch menu bar -->
-            <div class="menu-sec mini-two-sec">
-                <div class="left-menu">
-                    <ul class="menu-items">
-                        
-                    </ul>
-                </div>
-                <div class="right-menu">
-                    <button onclick="darkMode()" class="day-night-butt"><i onclick="myFunction(this)" class="fas fa-cloud-moon fa-2x"></i></button>
-                </div>
-            </div>
 
             <!-- small sec with my name and image -->
             <div class="intro-sec mini-two-sec">
                 <div class="left-menu">
+                    <button id="on-off" onclick="darkMode()" class="day-night-butt"><i onclick="myFunction(this)" class="fas fa-cloud-moon fa-2x"></i></button>
                     <h1 class="my-name">Estrella Vargas </h1>
                     <span class="small-text">Web Developer </span> <br>
                     
@@ -326,7 +322,7 @@
                     <div class="card reserve">
                         <div class="info">
                             <h3>Eat to Heal</h3>
-                            <p>Created for a Nutritionist to schedule appointments with new clients. Clearly displays marketing services, and allows users to create an account. Created with: HTML/CSS, JavaScript, Python, Django, and MySQL</p>
+                            <p>Created for a Nutritionist to schedule appointments with clients. Displays services, and prompts users to create an account. HTML/CSS, JavaScript, Python, Django, and MySQL</p>
                             <div class="nav-butts">
                                 <a target="_blank" class="butt-party" href="https://github.com/evargas1/finematterShop">Github</a>
                                 <a target="_blank" class="butt-party" href="https://finemattershop.com">Website</a>
