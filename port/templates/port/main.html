@@ -333,8 +333,8 @@
                 <section aria-label="learn more about Aba's group dining and wine dinner">
                     <div class="card reserve">
                         <div class="info">
-                            <h3>Eat to Heal</h3>
-                            <p>Created for a Nutritionist to schedule appointments with clients. Displays services and prompts users to create an account. HTML/CSS, JavaScript, Python, Django, and MySQL</p>
+                            <h3 class="toggle-light">Eat to Heal</h3>
+                            <p class="toggle-light">Created for a Nutritionist to schedule appointments with clients. Displays services and prompts users to create an account. HTML/CSS, JavaScript, Python, Django, and MySQL</p>
                             <div class="nav-butts">
                                 <a target="_blank" class="butt-party" href="https://github.com/evargas1/finematterShop">Github</a>
                                 <a target="_blank" class="butt-party" href="https://finemattershop.com">Website</a>
@@ -353,15 +353,15 @@
                             
                         </div>
                         <div class="info">
-                            <h3>Twitter Bot</h3>
-                            <p>Runs every 30 min, checks if certain accounts have tweeted or tagged our main account, if so will retweet the post. Improves engagement and automated a tedious task. Python, AWS, and Tweepy API.</p>
+                            <h3 class="toggle-light">Twitter Bot</h3>
+                            <p class="toggle-light">Runs every 30 min, checks if certain accounts have tweeted or tagged our main account, if so will retweet the post. Improves engagement and automated a tedious task. Python, AWS, and Tweepy API.</p>
                             <a target="_blank" href="https://github.com/evargas1/twitterBot">Github</a>
                         </div>
                     </div>
                     <div class="card reserve">
                         <div class="info">
-                            <h3>Pick Quick</h3>
-                            <p>Created a dynamic/responsive website for a mutli-location resturant in Washington; followed up to date WCAG standards. Worked alongside grahic designers to develop this funky design. HTML/SCSS, Wordpress, PHP, MySQL and jQuery.</p>
+                            <h3 class="toggle-light">Pick Quick</h3>
+                            <p class="toggle-light">Created a dynamic/responsive website for a mutli-location resturant in Washington; followed up to date WCAG standards. Worked alongside grahic designers to develop this funky design. HTML/SCSS, Wordpress, PHP, MySQL and jQuery.</p>
                             <a target="_blank" href="https://youtu.be/fCvCKiRs-kc">Video</a>
                         </div>
                         <div class="info-img">
@@ -457,6 +457,11 @@
 	    });
 
         const boldlargetext = document.querySelectorAll(".bold-large-text");
+	    boldlargetext.forEach(fakeImage => {
+            fakeImage.classList.toggle("light");
+	    });
+
+        const boldlargetext = document.querySelectorAll(".toggle-light");
 	    boldlargetext.forEach(fakeImage => {
             fakeImage.classList.toggle("light");
 	    });
